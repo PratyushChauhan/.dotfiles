@@ -1,0 +1,1 @@
+/home/cipher/.local/share/mybash/.bashrc
