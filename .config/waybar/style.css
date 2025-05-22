@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "JetBrains Mono", "Font Awesome 6 Free", "Symbols Nerd Font";
+    font-family: "JetBrains Mono", "Font Awesome 6 Free";
     font-size: 14px;
     min-height: 0;
 }
@@ -12,7 +12,9 @@ window#waybar {
 }
 
 #clock,
-#battery {
+#battery,
+#network,
+#tray {
     background-color: #1e1e2e;
     padding: 0 10px;
     margin: 6px 0;
@@ -25,6 +27,14 @@ window#waybar {
 
 #battery {
     color: #a6e3a1;
+}
+
+#network {
+    color: #89b4fa;
+}
+
+#network.disconnected {
+    color: #f38ba8;
 }
 
 #battery.charging {
