@@ -3,7 +3,7 @@
     "position": "top",
     "height": 30,
     "spacing": 8,
-    "modules-left": [],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["tray", "network", "battery"],
  
@@ -24,18 +24,26 @@
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
-        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
-    },
-    "network": {
-        "format-wifi": " {essid} ",
-        "format-ethernet": " {ipaddr}/{cidr}",
-        "tooltip-format": " {ifname} via {gwaddr}",
-        "format-linked": " {ifname} (No IP)",
-        "format-disconnected": "⚠ Disconnected",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", ":)"]
     },
     "tray": {
         "icon-size": 16,
         "spacing": 10
+    },
+    "hyprland/workspaces": {
+        "format": "{name}: {icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "active": "",
+            "default": ""
+        },
+        "persistent-workspaces": {
+            "*": [ 2,3,4,5 ], // 2-5 on every monitor
+            "HDMI-A-1": [ 1 ] // but only workspace 1 on HDMI-A-1
+        }
     }
 }
