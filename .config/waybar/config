@@ -5,7 +5,7 @@
     "spacing": 8,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "battery"],
+    "modules-right": ["tray","wireplumber", "battery"],
  
     "clock": {
         "format": "{:%H:%M}",
@@ -45,5 +45,11 @@
             "*": [ 2,3,4,5 ], // 2-5 on every monitor
             "HDMI-A-1": [ 1 ] // but only workspace 1 on HDMI-A-1
         }
+    },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "on-click": "pavucontrol",
+        "format-icons": ["", "", ""]
     }
 }
