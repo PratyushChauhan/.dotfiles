@@ -40,7 +40,7 @@
 # # Some config options have unique syntaxes for their value,
 # # which is explained in the docs for that config option.
 # # Just for example:
-# resize-overlay-duration = 4s 200ms
+# resize-overlay-duration = 4s 200ms 
 font-size = 10
 window-decoration = false
 background-opacity = 0.6
@@ -48,3 +48,5 @@ cursor-style = block
 cursor-style-blink = false
 background = black
 shell-integration-features = no-cursor
+confirm-close-surface = false
+keybind = shift+enter=text:\n

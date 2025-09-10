@@ -680,4 +680,4 @@ function hstrnotiocsti {
 if [[ $- =~ .*i.* ]]; then bind -x '"\C-r": "hstrnotiocsti"'; fi
 export HSTR_TIOCSTI=n
 
-
+export GEMINI_API_KEY=AIzaSyCSq5_kxN7F29SvDYXWJjMZ-VYPuiOGm88
