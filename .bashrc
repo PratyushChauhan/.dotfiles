@@ -680,4 +680,8 @@ function hstrnotiocsti {
 if [[ $- =~ .*i.* ]]; then bind -x '"\C-r": "hstrnotiocsti"'; fi
 export HSTR_TIOCSTI=n
 
-export GEMINI_API_KEY=AIzaSyCSq5_kxN7F29SvDYXWJjMZ-VYPuiOGm88
+source "$HOME/.envrc"
+# Autostart hyprland on tty1 login
+if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
+    exec hyprland
+fi
