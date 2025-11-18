@@ -196,6 +196,7 @@ configuration {
     background-color: @background;
     border:           1;
     padding:          5;
+    transparency: "real";
 }
 #mainbox {
     border:  0;
