@@ -2,6 +2,15 @@
 iatest=$(expr index "$-" i)
 
 #######################################################
+# HYPRLAND
+#######################################################
+
+# Autostart hyprland on tty1 login
+if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
+    exec hyprland
+fi
+
+#######################################################
 # SOURCED ALIAS'S AND SCRIPTS BY zachbrowne.me
 #######################################################
 #if [ -f /usr/bin/fastfetch ]; then
@@ -681,7 +690,3 @@ if [[ $- =~ .*i.* ]]; then bind -x '"\C-r": "hstrnotiocsti"'; fi
 export HSTR_TIOCSTI=n
 
 source "$HOME/.envrc"
-# Autostart hyprland on tty1 login
-if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
-    exec hyprland
-fi
