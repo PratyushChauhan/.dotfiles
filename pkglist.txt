@@ -1,5 +1,6 @@
 alsa-utils
 amd-ucode
+antigravity
 base
 base-devel
 bash-completion
@@ -25,6 +26,7 @@ extension-manager
 fastfetch
 firefox
 gamemode
+ghostscript
 ghostty
 git
 gobject-introspection
@@ -85,6 +87,7 @@ pipewire-jack
 pipewire-pulse
 postman-bin
 powertop
+proton-vpn-gtk-app
 protonplus
 protonup-qt
 python-pip
@@ -93,6 +96,7 @@ reflector
 rofi
 scrcpy
 sddm
+slack-desktop
 slurp
 sof-firmware
 speedtest-cli
@@ -103,6 +107,7 @@ stress-ng
 swaybg
 swayidle
 swaylock
+terminator
 terminus-font
 timeshift
 tmux
