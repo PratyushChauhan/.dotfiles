@@ -7,7 +7,7 @@ iatest=$(expr index "$-" i)
 
 # Autostart hyprland on tty1 login
 if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
-    exec hyprland
+    exec start-hyprland
 fi
 
 #######################################################
