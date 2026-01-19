@@ -60,7 +60,7 @@
         "format": "{volume}% {icon}",
         "format-muted": "",
         "on-click": "pavucontrol",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", " ", " "]
     },
     "idle_inhibitor": {
        "format": "{icon}",
