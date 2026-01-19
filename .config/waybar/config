@@ -5,7 +5,7 @@
     "spacing": 8,
     "modules-center": ["clock"],
     "modules-right": ["idle_inhibitor","tray","wireplumber","battery"],
-    "modules-left": [],
+    "modules-left": ["memory","cpu"],
  
     "clock": {
         "format": "{:%H:%M %A}",
@@ -40,16 +40,29 @@
         "on-click-right": "~/.config/hypr/scripts/glassmorphismToggle"
     },
  
+
+    "cpu": {
+       "interval": 5,
+       "format": " {usage}%",
+       "interval": 1,
+       "format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}%  ",
+       "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    },
+    "memory": {
+      "interval": 10,
+      "format": "{used:0.1f}G  ",
+      "on-click-right": "foot --title btop sh -c 'btop'"
+    },
     "hyprland/workspaces": {
         "format": "{name}: {icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "active": "",
-            "default": ""
+            "1": " ",
+            "2": " ",
+            "3": " ",
+            "4": " ",
+            "5": " ",
+            "active": " ",
+            "default": " "
         },
         "persistent-workspaces": {
             "*": [ 2,3,4,5 ], // 2-5 on every monitor
