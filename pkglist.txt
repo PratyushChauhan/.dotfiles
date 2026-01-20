@@ -35,6 +35,7 @@ grim
 grub
 gst-plugin-pipewire
 gtk2
+hdparm
 helvum
 heroic-games-launcher-bin
 hstr-git
@@ -58,11 +59,14 @@ linux-firmware
 linux-headers
 linux-lts
 linux-lts-headers
+lshw
 luarocks
 ly
 mako
 man-db
 mangohud
+mongodb-compass-bin
+mpv
 nemo
 neofetch
 neovim
@@ -70,6 +74,7 @@ net-tools
 network-manager-applet
 networkmanager
 ngrok
+noto-fonts-emoji
 npm
 ntfs-3g
 ntsync-dkms
@@ -80,6 +85,8 @@ octopi
 openvpn-update-systemd-resolved
 pacman-contrib
 pamixer
+paru
+paru-debug
 pavucontrol
 pipewire
 pipewire-docs
@@ -130,7 +137,9 @@ wireguard-tools
 wireplumber
 wl-clipboard
 woff2-font-awesome
+xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
+xdg-desktop-portal-wlr
 xf86-video-amdgpu
 yay
 yay-debug
