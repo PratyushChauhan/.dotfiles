@@ -8,7 +8,7 @@
     "modules-left": ["memory","cpu"],
  
     "clock": {
-        "format": "{:%H:%M %A}",
+        "format": "{:%H:%M %A, %d}",
         "tooltip-format": "{:%d %B, %Y}",
     },
      "tray": {
