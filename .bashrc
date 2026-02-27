@@ -666,12 +666,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/cipher/dev/work/tryvinci/vinci-video-translation-backend/google-cloud-sdk/path.bash.inc' ]; then . '/home/cipher/dev/work/tryvinci/vinci-video-translation-backend/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/cipher/dev/work/tryvinci/vinci-video-translation-backend/google-cloud-sdk/completion.bash.inc' ]; then . '/home/cipher/dev/work/tryvinci/vinci-video-translation-backend/google-cloud-sdk/completion.bash.inc'; fi
-
 # HSTR configuration - add this to ~/.bashrc
 alias hh=hstr                    # hh to be alias for hstr
 export HSTR_CONFIG=hicolor       # get more colors
@@ -690,3 +684,11 @@ if [[ $- =~ .*i.* ]]; then bind -x '"\C-r": "hstrnotiocsti"'; fi
 export HSTR_TIOCSTI=n
 
 source "$HOME/.envrc"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/cipher/dev/work/tryvinci/vinci-monorepo/google-cloud-sdk/path.bash.inc' ]; then . '/home/cipher/dev/work/tryvinci/vinci-monorepo/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/cipher/dev/work/tryvinci/vinci-monorepo/google-cloud-sdk/completion.bash.inc' ]; then . '/home/cipher/dev/work/tryvinci/vinci-monorepo/google-cloud-sdk/completion.bash.inc'; fi
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
