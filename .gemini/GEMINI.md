@@ -1,5 +1,5 @@
 - **MANDATORY:** When implementing a solution, do not rely on fallbacks by default, implement the original solution in the best way possible.
-- conda env : engram-backend-dev
+- conda env : always use the associated conda env for the project.
 - use gh for github related commands.
 - Implement features in as few lines of code as possible.
 - Bonus points if an implementation removes more lines of code than it adds.
