@@ -152,7 +152,6 @@ alias vi='nvim'
 alias svi='sudo vi'
 alias vis='nvim "+set si"'
 
-
 # Change directory aliases
 alias home='cd ~'
 alias cd..='cd ..'
@@ -424,7 +423,6 @@ distribution () {
     echo $dtype
 }
 
-
 DISTRIBUTION=$(distribution)
 if [ "$DISTRIBUTION" = "redhat" ] || [ "$DISTRIBUTION" = "arch" ]; then
       alias cat='bat'
@@ -586,7 +584,6 @@ mysqlconfig() {
 	fi
 }
 
-
 # Trim leading and trailing spaces (for scripts)
 trim() {
 	local var=$*
@@ -644,7 +641,6 @@ eval "$(zoxide init bash)"
 eval "$(_AUTO_CPUFREQ_COMPLETE=bash_source auto-cpufreq)"
 set clipboard+=unnamedplus
 
-
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -664,7 +660,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
 
 # HSTR configuration - add this to ~/.bashrc
 alias hh=hstr                    # hh to be alias for hstr
@@ -692,3 +687,8 @@ if [ -f '/home/cipher/dev/work/tryvinci/vinci-monorepo/google-cloud-sdk/path.bas
 if [ -f '/home/cipher/dev/work/tryvinci/vinci-monorepo/google-cloud-sdk/completion.bash.inc' ]; then . '/home/cipher/dev/work/tryvinci/vinci-monorepo/google-cloud-sdk/completion.bash.inc'; fi
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
+
+# opencode
+export PATH=/home/cipher/.opencode/bin:$PATH
+export EDITOR=nvim
+alias clip="xclip -sel clip"

@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
+    "height": 32,
     "spacing": 8,
     "modules-center": ["clock"],
     "modules-right": ["idle_inhibitor","tray","wireplumber","battery"],

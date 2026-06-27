@@ -1,8 +1,9 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "JetBrains Mono", "Font Awesome 6 Free";
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 7 Free", sans-serif;
     font-size: 14px;
+    font-weight: 400;
     min-height: 0;
 }
 
@@ -13,8 +14,12 @@ window#waybar {
 
 #clock,
 #battery,
+#cpu,
+#memory,
 #network,
-#workspaces
+#wireplumber,
+#idle_inhibitor,
+#workspaces,
 #tray {
     background-color: #1e1e2e;
     padding: 0 10px;
